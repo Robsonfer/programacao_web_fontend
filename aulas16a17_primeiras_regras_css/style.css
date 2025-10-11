@@ -1,0 +1,41 @@
+body {
+    background-color: #bcdff2; /* cor de fundo cinza claro */
+}
+
+h1 {
+    color: red; /* cor vermelha */
+    font-family: Arial, Arial, Helvetica, sans-serif; /* define a fonte */
+    font-size: 56px; /* tamanho da fonte */
+    text-align: center; /* centraliza o texto */
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif; /* define a fonte */
+    font-size: 48px; /* tamanho da fonte */
+    font-style: italic; /* deixa o texto em itálico */
+    font-weight: normal; /* deixa o texto com peso normal */
+    text-align: center; /* centraliza o texto */
+}
+
+h3 {
+    font-size: 38px; /* tamanho da fonte */
+    color: white; /* cor branca */
+    text-transform: capitalize; /* transforma a primeira letra de cada palavra em maiúscula */
+    text-align: center; /* centraliza o texto */
+    text-decoration: underline; /* sublinha o texto */
+    background-color: rgb(123, 140, 250); /* cor de fundo ciano */
+    border-radius: 15px;
+}
+
+p {
+    text-indent: 58px; /* recuo da primeira linha */
+    font-size: 28px; /* tamanho da fonte */
+    text-align: justify; /* justifica o texto */
+    /*color: #0000ff;*/ /* cor azul */
+    font-variant: small-caps; /* transforma todas as letras em maiúsculas, exceto a primeira letra de cada palavra */
+}
+
+a {
+    text-decoration: none; /* remove o sublinhado do link */
+    font-variant: normal; /* transforma todas as letras em minúsculas */
+}
