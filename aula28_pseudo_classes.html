@@ -6,7 +6,34 @@
     <title>Aula 28 | Pseudo Classes em links</title>
 
     <style>
+        body {
+            font-family: sans-serif;
+            color: red;
+        }
 
+        a{
+            text-decoration: none;
+        }
+
+        a:link{
+            color: red;
+        }
+
+        a:visited{
+            color: green;
+        }
+
+        a:hover{
+            background-color: yellow;
+            padding: 3px;
+            border-radius: 30px;
+            animation-timing-function: ease-in-out;
+            transition: all 0.3s;
+        }
+
+        a:active{
+            background-color: #ccc;
+        }
     </style>
 </head>
 <body>
