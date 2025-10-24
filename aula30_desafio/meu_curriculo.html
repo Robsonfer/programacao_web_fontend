@@ -10,7 +10,7 @@
 
     <style>
         body {
-            background-color: #eff9f9;
+            background-color: #effaff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             width: 80%;
             margin: auto;
@@ -19,7 +19,9 @@
         }
 
         h1 {
-            background-color: #acafd4;
+            border: 2px solid #061761;
+            color: #061761;
+            background-color: white;
             color: #061761;
             text-align: center;
             font-size: 46px;
@@ -28,15 +30,16 @@
         }
 
         h1:hover {
-            background-color: #8f9be2;
+            background-color: #061761;
+            color: white;
             transition: all 0.3s;
         }
 
         h2 {
+            border: 2px solid #061761;
             color: #061761;
-            background-color: #b6b6b6;
+            background-color: white;
             font-size: 36px;
-            border-bottom: 3px solid;
             padding: 10px;
             margin-top: 48px;
             margin-bottom: 12px;
@@ -44,7 +47,8 @@
         }
 
         h2:hover {
-            background-color: #acacc2;
+            background-color: #061761;
+            color: white;
             transition: all 0.3s;
         }
 
@@ -84,6 +88,33 @@
         a:active {
             background-color: #ccc;
         }
+
+        .menu {
+            display: flex;
+            justify-content: right;
+            gap: 12px;
+        }
+
+        .menu li {
+            list-style: none;
+            display: inline-block;
+            padding: 0
+        }
+
+        .menu a {
+            display: inline-block;
+            background-color: white;
+            padding: 16px;
+            border-radius: 8px;
+            border: 2px solid #061761;
+            color: #061761;
+        }
+
+        .menu a:hover {
+            background-color: #061761;
+            color: white;
+            transition: all 0.3s;
+        }
     
     </style>
 </head>
@@ -92,6 +123,12 @@
     <h1>Robson Ferreira</h1>
         
     <p class="center">Brasileiro, casado, 45 anos.</p>
+
+    <ul class="menu">
+        <li><a href="#">LikedIn</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Instagram</a></li>
+    </ul>
 
     <h2>Objetivo</h2>
 
