@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,18 +13,29 @@
             text-align: center;
         }
 
+        .logo_maiden {
+            width: 90%;
+            height: auto;
+            margin-top: 30px;
+        }
+
         h1, h2 {
             font-family: Arial, sans-serif;
             color: white;
         }
 
-        img {
+        .imgs_maiden {
             width: 300px;
             height: auto;
             border: 2px solid white;
             border-radius: 10px;
             margin: 2%;
-         }
+        }
+
+        .imgs_maiden:hover {
+            transform: scale(1.05);
+            transition: all 0.3s;
+        }
 
         ul {
             font-family: Arial, sans-serif;
@@ -36,14 +47,15 @@
             text-align: left;
             list-style: none;
         }
+
     </style>
 
 </head>
 <body>
-    <h1>Trabalhando com Imagens</h1>
-    <img src="iron maiden the trooper.jpg" alt="The Trooper">
-    <img src="iron maiden killers.jpg" alt="Killers">
-    <img src="iron maiden book of souls.jpg" alt="Book of Souls">
+<div><img class="logo_maiden" src="logo_maiden3.png" alt="logo_maiden"></div>
+    <img class="imgs_maiden" src="iron maiden the trooper.jpg" alt="The Trooper">
+    <img class="imgs_maiden" src="iron maiden killers.jpg" alt="Killers">
+    <img class="imgs_maiden" src="iron maiden book of souls.jpg" alt="Book of Souls">
     <h2>Tipos de imagens:</h2>
     <ul>
         <li>.jpg / .jpeg</li>
