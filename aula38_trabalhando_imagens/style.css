@@ -5,10 +5,10 @@ body {
     margin: auto;
 
     background-image: url(imagens/bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: right bottom;
+    background-repeat: no-repeat; /*Não repete a imagem*/
+    background-attachment: fixed; /*Fixa a imagem para não scrollar*/
+    background-size: cover; /*Cobre todo o fundo*/
+    background-position: right bottom; /*Posiciona a imagem no canto inferior direito*/
 }
 
 h1, h2 {
