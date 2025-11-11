@@ -6,7 +6,19 @@ body {
 
 .hero {
     background-image: url(imagens/bg-3.jpg);
-    color: white;
-    padding: 30px;
+    height: 500px;
+    background-size: cover;
+    background-position: right center;
+}
+
+.hero-content {
+    margin: 50px auto 0 auto;
+    width: 80%;
     text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
 }
