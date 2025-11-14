@@ -61,3 +61,52 @@ body {
 .hero nav a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+main {
+    width: 90%;
+    margin: auto;
+    max-width: 860px;
+    text-align: justify;
+}
+
+article {
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+article h2 {
+    border-bottom: 2px solid #ccc;
+    background-color: #eee;
+    padding: 8px;
+    margin-top: 0;
+}
+
+.btn {
+    color: black;
+    background-color: #cdc7c3;
+    border: 1px solid #bbb1ad;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #bbb1ad;
+    border: 1px solid #9a8f8b;
+}
+
+.rodape {
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 2px;
+    background-color: #6b6c68;
+    color: white;
+    padding: 32px;
+    margin-top: 32px;
+}
