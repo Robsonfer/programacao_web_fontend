@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float e clear na prática</title>
+
+    <style>
+        #container {
+            width: 80%;
+            background-color: #ccc;
+            padding: 15px;
+            overflow: auto;
+        }
+
+        #container div {
+            background-color: rgba(255, 0, 0, 0.3);
+            margin-bottom: 5px;
+            width: 55%;
+            height: 50px;
+        }
+
+        #div1 {
+            float: left;
+        }
+
+        #div2 {
+            float: right;
+        }
+
+        #div3 {
+            float: left;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="div1">div1</div>
+        <div id="div2">div2</div>
+        <div id="div3">div3</div>
+    </div>
+</body>
+</html>
