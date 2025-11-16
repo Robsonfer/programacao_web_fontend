@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit content, min content e max content</title>
+    <title>Overflow</title>
 
     <style>
         .container {
@@ -11,6 +11,8 @@
             padding: 16px;
             width: 300px;
             margin-bottom: 16px;
+            height: 300px;
+            background-color: rgba(0, 0, 150, 0.3);
         }
 
         .item {
@@ -30,11 +32,40 @@
         .max-content .item {
             width: max-content; /*ajusta o tamanho conforme o maior conteúdo possível sem quebra de linha */
         }
+
+        .overflow-hidden {
+            overflow: hidden; /*oculta o conteúdo que ultrapassa o tamanho do container */
+        }
+
+        .overflow-scroll {
+            overflow: scroll; /*adiciona barras de rolagem para acessar o conteúdo que ultrapassa o tamanho do container */
+        }
+
+        .overflow-auto {
+            overflow: auto; /*adiciona barras de rolagem somente quando necessário */
+        }
+
+        .overflow-x-hidden {
+            overflow-x: hidden; /*oculta o conteúdo que ultrapassa o tamanho do container na direção horizontal */
+        }
+
+        .overflow-y-hidden {
+            overflow-y: hidden; /*adiciona barra de rolagem vertical para acessar o conteúdo que ultrapassa o tamanho do container na direção vertical */
+        }
+
+        .overflow-x-scroll {
+            overflow-x: scroll; /*adiciona barra de rolagem horizontal para acessar o conteúdo que ultrapassa o tamanho do container na direção horizontal */
+        }
+
+        .overflow-visible {
+            overflow: visible; /*permite que o conteúdo ultrapasse o tamanho do container - PADRÃO */
+        }
+
     </style>
 
 </head>
 <body>
-    <div class="container fit-content">
+    <div class="container fit-content overflow-hidden overflow-auto">
         <div class="item">
             lorem
         </div>
@@ -49,7 +80,7 @@
         </div>
     </div>
 
-    <div class="container min-content">
+    <div class="container min-content overflow-y-hidden overflow-x-scroll">
         <div class="item">
             lorem
         </div>
@@ -64,7 +95,7 @@
         </div>
     </div>
 
-    <div class="container max-content">
+    <div class="container max-content overflow-auto">
         <div class="item">
             lorem
         </div>
