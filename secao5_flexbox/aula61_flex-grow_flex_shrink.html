@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+
+    <style>
+
+        body {
+            background-color: lightyellow;
+        }
+        
+        .flexbox {
+            height: 250px;
+            border: 3px solid green;
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        .flexbox div {
+            border: 2px solid red;
+            width: 400px;
+            margin: 15px;
+        }
+
+        .flex-container1 {
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .flex-container1 div {
+            flex-basis: 50px;
+            background-color: lightblue;
+            margin: 0;
+        }
+
+        .flex-container1 .div2 {
+            flex-grow: 1; /* divide o espaço sobrando para a div2, porém metade da div3 = 1/6 */
+            background-color: lightcoral;
+        }
+
+        .flex-container1 .div3 {
+            flex-grow: 2; /* divide o espaço sobrando para a div3, porém metade da div4 = 2/6 */
+            background-color: lightcoral;
+        }
+
+        .flex-container1 .div4 {
+            flex-grow: 3; /* divide o espaço sobrando para a div4 porém o dobro da div3 e o quádruplo da div1 = 3/6 */
+            background-color: lightcoral;
+        }
+    
+    </style>
+
+</head>
+<body>
+    
+    <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+</body>
+</html>
