@@ -2,13 +2,85 @@
 
 ## O que é o flexbox?
 
-Por muito tempo, as únicas ferramentas disponíveis para criar leiautes em CSS e posicionar elementos com boa compatibilidade entre browsers eram float e position. Porém, essas ferramentas possuem algumas limitações muito frustrantes, especialmente no que diz respeito à responsividade. Algumas tarefas que consideramos básicas em um leiaute, como centralização vertical de um elemento-filho com relação a um elemento-pai ou fazer com que elementos-filhos ocupem a mesma quantidade de espaço, ou colunas terem o mesmo tamanho independente da quantidade de conteúdo interno, eram impossíveis ou muito difíceis de serem manejadas com floats ou position, ao menos de forma prática e flexível.
+A ferramenta Flexbox (de Flexible Box) foi criada para tornar a tarefa de criar layouts mais simples e funcionais. Funciona fácil para tarefas como centralizar elementos, ajustar à esquerda ou à direita, em cima ou embaixo, acima ou abaixo, dentro ou fora. Por isso o nome flexbox, ou seja, caixa flexível. Os filhos de um elemento com Flexbox podem se posicionar em qualquer direção e pode ter dimensões flexíveis para se adaptar.
 
-A ferramenta Flexbox (de Flexible Box) foi criada para tornar essas tarefas mais simples e funcionais: os filhos de um elemento com Flexbox podem se posicionar em qualquer direção e pode ter dimensões flexíveis para se adaptar.
+## Estruturas do flexbox
+
+Basicamente o flexbox se divide em duas partes, sendo a primeira o Elemento pai e a segunda o Elemento filho. Dentro de um elemento pai, podemos ter quantos elementos filhos quisermos e dentro de um elemento filho podem haver outros elementos, o que torna este elemento filho também um elemnto pai.
+
+```html
+<div class="elemento1">
+    <div class="elemento2">
+        <div class="elemento3">
+            <div class="elemento4">
+                <p class="elemento5">Lorem Ipsum</div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+Conforme mostrado no exemplo acima, o elemento1 é o pai do elemento2 que por sua vez é pai do elemento3 que por sua vez é pai do elemento4 que por sua vez é pai do elemento5.
+
+O importante a compreender dentro desta estrutura é que o flexbox trabalha o relacionamento de somente uma etapa por vez, ou seja, cada filho só obedece ao seu pai, o elemento "neto" por assim dizer, não obedece ao seu avô, somente ao seu pai. Portanto, cada elemento só respeita as propriedades determinadas pelo elemento diretamente acima dele.
+
+**Mas nós podemos ter dois ou mais elementos filhos do mesmo pai?**
+
+Sim, é completamente possível um elemento ter mais de um filho por vez, desta forma o exemplo ficaria assim:
+
+```html
+<div class="elemento1">
+    <div class="elemento-a">
+        <p>Lorem Ipsum</div>
+    </div>
+    <div class="elemento-b">
+        <p>Lorem Ipsum</div>
+    </div>
+    <div class="elemento-c">
+        <p>Lorem Ipsum</div>
+    </div>
+</div>
+
+<div class="elemento2">
+    <div class="elemento-d">
+        <p>Lorem Ipsum</div>
+    </div>
+    <div class="elemento-e">
+        <p>Lorem Ipsum</div>
+    </div>
+    <div class="elemento-f">
+        <p>Lorem Ipsum</div>
+    </div>
+</div>
+```
+
+Note que no exemplo acima o elemento1 que é o elemento pai tem abaixo de si como elementos filhos três elementos: elemento-a, elemento-b e elemento-c e cada um deles tem seus elementos filhos que são parágrafos. O mesmo foi feito para o elemento2 que é o pai do elemento-d, elemento-e e elemento-f.
 
 ## Elemento pai
 
-Quando utilizamos o Flexbox, é muito importante saber quais propriedades são declaradas no elemento-pai (por exemplo, uma div que irá conter os elementos a serem alinhados) e quais serão declaradas nos elementos-filhos. Abaixo, seguem propriedades que devem ser declaradas utilizando o elemento-pai como seletor (para alinhar elementos-filhos):
+Antes definir então o que é o elemento pai, precisamos entender que todo elemento pode ser um container, pois pode conter muitos elementos dentro de si.
+
+Portanto elemento pai nada mais é do que um container que abriga dentro de si mais elementos independente do tipo.
+
+## Elemento filho
+
+Antes de definir o que é o elemento filho, precisamos entender que todo elemento filho é um item dentro de um elemento pai, ou seja, um container.
+
+Resumindo: Um elemento filho dentro de um elemento pai = Um item dentro de um container. Seguir o mesmo raciocíno para o elemento filho que também tem filhos.
+
+Elemento filho é todo aquele elemento que tem outro elemento acima de si que é responsável por guardá-lo dentro de si.
+
+## O que são propriedades em CSS?
+
+Ao determinar elementos pai e elementos filhos ou containers e itens, estamos criando a hierarquia dos containers, entretanto não passa disso. O que realmente determina como os elementos e itens são estrutuados dentro de cada container são as propriedades.
+
+São as propriedades que manipulam os espaços e características que temos da forma que precisamos. Tamanho, largura, altura, posicionamento, tudo é determinado por aí.
+
+## A relação entre a estrutura de container e as propriedades
+
+Quando utilizamos o Flexbox, é muito importante saber quais propriedades são declaradas no elemento-pai e quais serão declaradas nos elementos-filhos.
+
+Abaixo, seguem propriedades que devem ser declaradas utilizando o elemento-pai como seletor (para alinhar elementos-filhos):
 
 **display:**
 
