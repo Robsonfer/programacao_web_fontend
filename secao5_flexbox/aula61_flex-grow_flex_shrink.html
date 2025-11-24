@@ -15,7 +15,7 @@
             height: 250px;
             border: 3px solid green;
             display: flex;
-            margin-bottom: 16px;
+            margin-bottom: 60px;
         }
 
         .flexbox div {
@@ -24,6 +24,8 @@
             margin: 15px;
         }
 
+
+        /* flex-grow */
         .flex-container1 {
             justify-content: center;
             align-items: center;
@@ -50,13 +52,83 @@
             flex-grow: 3; /* divide o espaço sobrando para a div4 porém o dobro da div3 e o quádruplo da div1 = 3/6 */
             background-color: lightcoral;
         }
+
+        /* O valor padrão para o flex-grow é o 0 enquanto que o valor padrão para o flex-shrink é o 1 */
+
+
+        /* flex-shrink */
+        .flex-container2 {
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .flex-container2 div {
+            flex-basis: 600px;
+            background-color: lightblue;
+            margin: 0;
+        }
+
+        .flex-container2 .div2 {
+            flex-shrink: 2; /* funciona exatamente ao contrário do flex-grow mas obedece as proporções igual */
+            background-color: lightcoral;
+        }
+
+        .flex-container2 .div3 {
+            flex-shrink: 3; /* funciona exatamente ao contrário do flex-grow mas obedece as proporções igual */
+            background-color: lightcoral;
+        }
+
+        .flex-container2 .div4 {
+            flex-shrink: 4; /* funciona exatamente ao contrário do flex-grow mas obedece as proporções igual */
+            background-color: lightcoral;
+        }
+
+
+        /* Atalho grow, shrink e basis*/
+        .flex-container3 {
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .flex-container3 div {
+            flex-basis: 200px; /* flex-grow | flex-shrink | flex-basis */
+            background-color: lightblue;
+            margin: 0;
+        }
+
+        .flex-container3 .div3 {
+            flex: 1 3 200px; /* flex-grow 1 | flex-shrink 3 | flex-basis 200px */
+            background-color: lightcoral;
+        }
     
     </style>
 
 </head>
 <body>
     
+    <h1>flex-grow</h1>
+    <p>Quanto maior o número, maior é o grow do flex-grow, ou seja, maior é o aumento do tamanho. Ex: o 2 é 2x maior e assim por diante.</p>
     <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <h1>flex-shrink</h1>
+    <p>Quanto maior o número, maior é o shrink do flex-shrink, ou seja, maior é a diminuição do tamano. Ex: o 2 é 2x menor e assim por diante.</p>
+    <div class="flexbox flex-container2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <h1>Atalho grow, shrink e basis</h1>
+    <p>O primeiro número representa o flex-grow, o segundo o flex-shrink e o terceiro o flex basis.</p>
+    <div class="flexbox flex-container3">
         <div class="div1">1</div>
         <div class="div2">2</div>
         <div class="div3">3</div>
