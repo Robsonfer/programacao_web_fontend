@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>self-align e center</title>
+
+    <style>
+
+        body {
+            background-color: lightyellow;
+        }
+        
+        .flexbox {
+            height: 250px;
+            border: 3px solid green;
+            display: flex;
+            margin-bottom: 60px;
+        }
+
+        .flexbox div {
+            border: 2px solid red;
+            width: 400px;
+            margin: 15px;
+        }
+
+        .flex-container1 div {
+            background-color: lightblue;
+        }
+
+        .flex-container1 .div1 {
+            order: 1; /* altera a ordem da div1 para o penúltimo. O padrão é ordem 0, como colocamos 1, vai para um antes da div2. */
+            align-self: flex-end; /* alinha a div1 no final do container flex */
+        }
+
+        .flex-container1 .div2 {
+            order: 2; /* altera a ordem da div2 para o último. O padrão é ordem 0, como colocamos 2, vai para o final. */
+            align-self: center;
+        }
+    
+    </style>
+
+</head>
+<body>
+    
+    <h1>flex-grow</h1>
+    <p>Quanto maior o número, maior é o grow do flex-grow, ou seja, maior é o aumento do tamanho. Ex: o 2 é 2x maior e assim por diante.</p>
+    <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+</body>
+</html>
