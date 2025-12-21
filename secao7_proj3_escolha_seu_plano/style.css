@@ -50,7 +50,7 @@ body {
 a.header__nav--active {
     background-color: #cbe300;
     color: #0c1014;
-    pointer-events: none;
+    pointer-events: none; /* Desativa o link ativo */
 }
 
 .pricing {
@@ -73,7 +73,7 @@ a.header__nav--active {
     border-bottom: 2px solid #cbe300;
     margin-top: 0;
     padding-bottom: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 2px; /* Espaçamento entre letras */
 }
 
 .pricing-plan p {
@@ -88,8 +88,12 @@ a.header__nav--active {
     margin: 0 0 35px 0;
     color: #b5b5b5;
     padding-left: 16px;
-    line-height: 1.8;
-    flex-grow: 1;
+    line-height: 1.8; /* Espaçamento entre linhas */
+    flex-grow: 1; /* Faz o espaço crescer para empurrar o botão para baixo */
+}
+
+.pricing-plan__features li::marker {
+    color: #cbe300;
 }
 
 .pricing-plan__cta {
