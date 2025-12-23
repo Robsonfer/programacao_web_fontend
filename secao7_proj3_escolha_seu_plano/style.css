@@ -92,7 +92,7 @@ a.header__nav--active {
     flex-grow: 1; /* Faz o espaço crescer para empurrar o botão para baixo */
 }
 
-.pricing-plan__features li::marker {
+.pricing-plan__features li::marker { /* Personaliza o marcador da lista */
     color: #cbe300;
 }
 
@@ -107,4 +107,10 @@ a.header__nav--active {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.pricing-plan__cta:hover {
+    outline: 2px solid #cbe300; /* Adiciona uma borda ao passar o mouse */
+    background-color: transparent;
+    color: white;
 }
