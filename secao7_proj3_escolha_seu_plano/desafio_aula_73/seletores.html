@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto CSS</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Cursos Serfrontend</h1>
+        </div>
+    </header>
+    <main>
+        <section class="content-section">
+            <article class="content-section__article">
+                <h2>Seletores CSS</h2>
+                <p>Os Seletores definem quais elementos um conjunto de regras CSS se aplica.</p>
+
+                <p>Este seletor básico escolhe todos os elementos que correspondem ao nome fornecido. Sintaxe: nome-da-tag Exemplo: input corresponderá a qualquer elemento &lt;input&gt;.</p>
+
+                <h3>Seletor por classe</h3>
+                <p>Este seletor básico escolhe elementos baseados no valor de seu atributo classe. Sintaxe: .nome-da-classe Exemplo: .index irá corresponder a qualquer elemento que tenha o índice de classe (provavelmente definido por um atributo class="index", ou similar).</p>
+
+                </h3>Seletor por ID</h3>
+                <p>Este seletor básico escolhe nós baseados no valor do atributo id. Deve existir apenas um elemento com o mesmo ID no mesmo documento. Sintaxe: #nome-do-id Exemplo: #toc irá corresponder ao elemento que possuir o id=toc (definido por um atributo id="toc", ou similar).</p>
+
+                <h3>Seletores universais</h3>
+                
+                <p>Este seletor básico irá escolher todos os nós. Ele também existe em um namespace único e em uma variante de todo o namespace também. Sintaxe: * ns|* *|* Exemplo: * irá corresponder a todos os elementos do documento.</p>
+
+                </h3>Seletores por atributo</h3>
+                
+                <p>Este seletor básico ira escolher nós baseados no valor de um de seus atributos, ou até mesmo pelo próprio atributo. Sintaxe: [atrib] [atrib=valor] [atrib~=valor] [atrib|=valor] [atrib^=valor] [atrib$=valor] [atrib*=valor] Exemplo: [autoplay] irá corresponder a todos os elementos que possuirem o atributo autoplay (para qualquer valor).</p>
+
+                <p>Fonte: <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Selectors">Seletores CSS por MDN</a></p>
+            </article>
+        </section>
+        <footer class="footer">
+            <p>Clique <a class="link-back" href="index.html">aqui</a> para voltar à página inicial.</p>
+    </main>
+</body>
+</html>

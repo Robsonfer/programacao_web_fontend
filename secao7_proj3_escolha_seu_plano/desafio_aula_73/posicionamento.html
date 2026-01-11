@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto CSS</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Cursos Serfrontend</h1>
+        </div>
+    </header>
+    <main>
+        <section class="content-section">
+            <article class="content-section__article">
+                <h2>CSS Positioning</h2>
+                <p>CSS Positioning é um módulo do CSS que define como ficam a posição dos elementos relativos e absolutos da página.</p>
+
+                <h2>O que é Position: static?</h2>
+
+                <p>position: static é o posicionamento padrão de todos os elementos HTML. Com static, os elementos seguem o fluxo normal da página, ou seja, são empilhados na ordem em que aparecem no código.</p>
+
+                <p>Exemplo: Se você adicionar duas caixas <div> sem definir position, a segunda aparece abaixo da primeira, ocupando a linha inteira (se for um elemento de bloco, como uma div).</p>
+
+                <p>Não é possível usar propriedades como top, left, right ou bottom com static.</p>
+
+                <p><strong>Quando usar?</strong></p>
+
+                <p>Use static quando quiser que os elementos sigam a ordem natural da página, sem manipulação de posição.</p>
+
+                <h2>Como Funciona o Position: relative?</h2>
+
+                <p>O que é position: relative?</p>
+
+                <p>Com relative, o elemento é posicionado relativamente à sua posição original no fluxo da página. Ele continua ocupando seu espaço original, mas pode ser deslocado usando top, left, right ou bottom.</p>
+
+
+                <p>Exemplo:</p>
+
+                <code>
+                .caixa {
+                    position: relative;
+                    left: 50px;
+                    top: 25px;
+                }
+                </code>
+
+            
+            
+            <p>Isso move a caixa 50 pixels para a direita e 25 pixels para baixo, mas o espaço original dela na página permanece reservado.</p>
+
+            <p>Z-index: Controla a sobreposição de elementos. Um elemento com z-index: 10 fica à frente de outro com z-index: 5.</p>
+
+            <p><strong>Quando usar?</strong></p>
+
+            <p>Use relative para ajustes sutis de posição ou para servir como referência para elementos filhos com position: absolute.</p>
+
+            <p>Fonte: <a href="https://www.hashtagtreinamentos.com/posicionamento-css-html-e-css?conversion=base-ex-go-post-novos&gad_source=1&gad_campaignid=22810243158&gbraid=0AAAAADLlh8-xkAXz395rpSQl-S961wyjv&gclid=Cj0KCQiAsY3LBhCwARIsAF6O6XhiFvO3sHlYAdWeSQPkLmaoaAOz8lkHlEgCDMIw5qAZ4hDaz8ugv2YaAghAEALw_wcB">Position por Hashtag Treinamentos</a></p>
+            </article>
+        </section>
+        <footer class="footer">
+            <p>Clique <a class="link-back" href="index.html">aqui</a> para voltar à página inicial.</p>
+    </main>
+</body>
+</html>

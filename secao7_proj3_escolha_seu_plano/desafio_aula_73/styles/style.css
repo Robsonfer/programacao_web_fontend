@@ -38,6 +38,14 @@ body {
     border-bottom: 2px solid;
 }
 
+.hero-content a {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    padding: 16px;
+    display: inline-block;
+    border-bottom: 2px solid;
+}
+
 .content-section {
     display: flex;
     flex-wrap: wrap;
@@ -58,6 +66,7 @@ body {
     display: block;
 }
 
+/* Manter até substituir todos os elementos "p" por "a" acrescentando as matérias*/
 .card p {
     background-color: #393535;
     color: white;
@@ -68,8 +77,55 @@ body {
     text-transform: uppercase;
 }
 
+.card a {
+    display: block;
+    text-decoration: none;
+    background-color: #393535;
+    color: white;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Manter até substituir todos os elementos "p" por "a" acrescentando as matérias*/
 .card p:hover {
     background-color: #222121;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #222121;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer {
+    width: 860px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.link-back {
+    background-color: #393535;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.link-back:hover {
+    background-color: #222121;
     transition: background-color 0.3s;
 }
