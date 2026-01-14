@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medidas</title>
+
+    <style>
+
+        html {
+            font-size: 62.5%;
+            margin: 4rem;
+            background-color: #e3e3e3;
+        }
+
+        h1 {
+            font-size: 2.4em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.8em;
+        }
+
+        b {
+            color: red;
+            font-size: 1.5em;
+        }
+
+        .dois-em {
+            font-size: 2em;
+        }
+
+        .vinteoitopx {
+            font-size: 2.8rem;
+            width: 60rem;
+            background-color: lightskyblue;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .porcentagem {
+            width: 50%;
+            height: 10rem;
+            background-color: lightgreen;
+            padding: 1rem;
+            margin-top: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .porcentagem p {
+            display: inline-block;
+            width: 50%;
+            height: 50%;
+            align-items: center;
+            background-color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Unidades de medidas</h1>
+
+    <h2>Unidade de medida "em"</h2>
+
+    <p>Basicamente 1em é igual ao tamanho da fonte do elemento pai, ou seja, <b>o tamanho da fonte padrão.</b></p>
+    <p class="dois-em">Mas se usarmos 2em por exemplo, muda para o <b>dobro do padrão.</b></p>
+    <p>Uma coisa que se vê muito é determinar o tamanho da fonte já dentro do elemento html com a porcentagem de 62.5%. Isso faz com que o tamanho padrão da fonte seja de 10px.</p>
+    <p>Mas porque isso é interessante?</p>
+    <p>Porque dessa forma, 1em equivale a 10px, se eu quiser 16px, basta usar 1.6em. Se eu quiser 18px, basta usar 1.8em. Prático não?</p>
+    <p>E seu eu quiser meu H1 com 24px, basta usar 2.4em.</p>
+
+    <h2>Unidade de medida "rem"</h2>
+
+    <p>A unidade de medida "rem" funciona de forma semelhante ao "em", porém, ao invés de se basear no tamanho da fonte do elemento pai, ela se baseia no tamanho da fonte do elemento raiz (normalmente o elemento html).</p>
+
+    <p>Por exemplo, se o tamanho da fonte padrão do html for 16px, então 1rem será igual a 16px. Se quisermos que o H1 tenha 24px, basta usar 1.5rem.</p>
+    <p class="vinteoitopx">Como o elemento raíz que é o nosso html está parametrizado com <strong>62.5%</strong> o que equivale a 10px, este parágrafo tem que ter 28px, pois criei uma classe chamada vinteoitopx com 2.8rem para este elemento p.</p>
+
+    <p>E continuando a aula, estas unidades de medida em e rem, não são usadas apenas com fontes, mas também com larguras, alturas, espaçamentos e outros elementos. Veja acima!</p>
+
+    <h2>Unidade de medida "porcentagem"</h2>
+    <p>A unidade de medida "porcentagem" é uma unidade relativa ao tamanho do elemento pai. Por exemplo, se o elemento pai tem 100px de largura e o elemento filho tem 50%, então o elemento filho terá 50px de largura.</p>
+    <p>Essa unidade é muito útil para criar layouts responsivos, onde os elementos se ajustam ao tamanho da tela do dispositivo.</p>
+
+    <div class="porcentagem">
+        <p>Unidade de medida porcentagem</p>
+    </div>
+</body>
+</html>
