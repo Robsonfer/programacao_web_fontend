@@ -49,7 +49,7 @@
             padding: 1rem;
             margin-top: 2rem;
             text-align: center;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
         }
 
         .porcentagem p {
@@ -58,6 +58,47 @@
             height: 50%;
             align-items: center;
             background-color: white;
+        }
+
+        .padding-em {
+            color: white;
+            background-color: red;
+        }
+
+        .padding-em p {
+            background-color: transparent;
+            margin: 0;
+            padding: 1em;
+            font-size: 1rem;
+        }
+
+        .viewport-container {
+            font-size: 3rem;
+            width: 90vw;
+            height: 90vh;
+        }
+
+        .viewport {
+            color: white;
+            width: 90%;
+            height: 90%;
+            background-color: blue;
+        }
+
+        .em {
+            width: 20em;
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 2em;
+        }
+
+        .ch {
+            width: 20ch;
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 2em;
         }
 
     </style>
@@ -91,5 +132,35 @@
     <div class="porcentagem">
         <p>Unidade de medida porcentagem</p>
     </div>
+
+    <h2>Aula 84 - Falando mais um pouco de "em" na aula 84 - "em" fora de font-size</h2>
+
+    <div class="padding-em">
+        <p>padding com "em"</p>
+    </div>
+
+    <h2>Aula 85 - vw e vh</h2>
+
+    <p>As unidades de medida "vw" e "vh" são relativas à largura e altura da viewport (janela do navegador). Por exemplo, 1vw é igual a 1% da largura da viewport, e 1vh é igual a 1% da altura da viewport.</p>
+
+    <div class="porcentagem viewport-container">
+        porcentagem
+        <div class="viewport">
+            viewport
+        </div>
+    </div>
+
+    <h2>Aula 86 - unidade "ch"</h2>
+
+    <p>A unidade de medida "ch" é relativa à largura do caractere "0" (zero) da fonte padrão do elemento. Por exemplo, se o tamanho da fonte for 16px, então 1ch será igual a 16px.</p>
+
+    <div class="em">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nulla expedita ducimus, delectus laborum dicta odit quo corrupti iure ipsam! Facilis atque dolore corrupti unde omnis libero voluptas placeat quod alias adipisci aliquam iusto nam eaque excepturi inventore nemo ipsam, ullam provident ipsa explicabo, itaque ab, quo voluptatibus tenetur! Ipsam iste vel voluptates vitae maiores, mollitia ea laudantium minus ducimus!
+    </div>
+
+    <div class="ch">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis ad voluptatem vel id! Ratione alias laborum, rem commodi sunt, distinctio impedit eveniet sint harum eligendi enim ab? Rem rerum eaque odit! Officiis totam laboriosam tempora labore enim, nesciunt ad? Nemo facere aperiam quo quia magnam velit vel ullam laudantium qui cupiditate repudiandae consequatur consequuntur autem, ab iste porro eveniet.
+    </div>
+
 </body>
 </html>

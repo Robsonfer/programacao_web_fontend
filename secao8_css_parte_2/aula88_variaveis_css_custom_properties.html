@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 88 - Variáveis CSS (Custom Properties)</title>
+
+    <style>
+        html {
+            font-size: 62.5%;
+            --header-height: 7rem;
+            --footer-height: 3rem;
+            --padding-doc: 2rem;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            background-color: gray;
+            color: white;
+            height: var(--header-height);
+            font-size: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: var(--padding-doc);
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 5%;
+        }
+
+        ul li a {
+            color: gray;
+            text-decoration: none;
+            background-color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        ul li a:hover {
+            padding: 0.4rem 0.9rem;
+            border: 1px solid white;
+            background-color: rgb(86, 86, 86);
+            color: white;
+        }
+
+        main {
+            min-height: calc(100vh - var(--header-height) - var(--footer-height));
+            background-color: #ccc;
+            font-size: 2rem;
+            margin-top: var(--header-height);
+            margin-bottom: var(--footer-height);
+            padding: var(--padding-doc);
+            padding-bottom: 5rem;
+            text-align: justify;
+        }
+
+        .img {
+            border: 1px solid #000;
+            width: 300px;
+            height: 200px;
+            float: left;
+            margin: 1rem 2rem 1rem 0;
+        }
+
+        .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img2 {
+            border: 1px solid #000;
+            width: 300px;
+            height: 200px;
+            float: right;
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        .img2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img3 {
+            border: 1px solid #000;
+            width: 300px;
+            height: 200px;
+            float: left;
+            margin: 1rem 2rem 1rem 0;
+        }
+
+        .img3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+
+        footer {
+            width: 100%;
+            height: var(--footer-height);
+            font-size: 2rem;
+            background-color: gray;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: var(--padding-doc);
+            text-align: center;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Title Lorem Ipsum</h1>
+        <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quas, praesentium ipsum doloremque molestias fugit!</h2>
+
+        <div class="img"><img src="https://images.pexels.com/photos/409127/pexels-photo-409127.jpeg" alt="Imagem Lorem Ipsum"></div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci animi aliquid dolorem nulla sapiente earum perferendis provident fugiat repellendus optio quasi ratione hic pariatur commodi, totam suscipit labore quas corporis. Quas ratione recusandae natus velit voluptatem illum itaque eligendi culpa eius ipsam. Fugiat totam quaerat debitis possimus voluptate explicabo dignissimos alias voluptas quis quam facilis molestiae, obcaecati harum dolorem sequi neque libero, laudantium ducimus accusantium veritatis amet et nostrum fugit. Vitae corrupti deserunt facilis ipsa quae, ratione quas explicabo, veniam incidunt repellat beatae veritatis in mollitia tempore velit repellendus dicta vero. Debitis temporibus repellat reprehenderit soluta rerum, ea impedit? Molestias cum, earum vero ducimus, aliquam repudiandae quae, beatae suscipit quasi amet similique. Perspiciatis possimus ea numquam rem voluptatem quibusdam non inventore, dicta veritatis assumenda perferendis hic consequatur accusamus dolore ipsum, officia adipisci asperiores eum modi architecto. Alias unde asperiores inventore dignissimos odio reprehenderit exercitationem velit laboriosam nam quis ipsum, amet aliquam dolore ipsam quae dicta itaque recusandae dolorum esse. Aliquam harum, dicta ab odio doloremque laboriosam ipsam veniam nesciunt mollitia similique molestias libero deleniti ex ut autem cum ipsum rem vero. Vel aperiam autem quibusdam at in laudantium consequuntur soluta voluptatum, voluptatem necessitatibus! Quo repudiandae ullam quia explicabo, omnis neque possimus. Mollitia reprehenderit sint corrupti aliquid, dicta minima maxime corporis? <strong>Commodi fuga tenetur voluptas!</strong> Ullam tempore molestias esse, quo enim quae. Beatae temporibus, voluptas tenetur neque doloremque sunt fugiat illo quidem nihil quisquam vitae molestiae sed fugit cupiditate amet delectus, laborum quod similique soluta eius, dolorem in reiciendis non at. Atque nam fugit rerum deserunt, corporis aliquam iste facilis soluta sit quod, nisi omnis veritatis dolorem. Vel consequuntur alias voluptatem consequatur porro eos quidem repudiandae deserunt vitae! Accusamus minus necessitatibus odio, incidunt impedit, soluta maiores quasi laboriosam dicta officia molestias architecto expedita sit voluptas officiis blanditiis quia placeat dolore iste? Eaque iure doloribus unde nostrum soluta iusto, dolore non natus ex exercitationem, quasi aspernatur molestias, eos vero alias placeat omnis. Quis, consequatur perspiciatis ipsum minima sit ducimus dolor deserunt sapiente id totam sint maxime doloribus cum commodi rem placeat incidunt, tempore iure dignissimos reprehenderit. Maxime delectus similique magni, commodi nemo provident ducimus optio dolorum vel ipsa, deserunt quaerat quas, cum nesciunt obcaecati. Fugiat commodi modi, molestias laborum facilis ducimus recusandae illo libero dolor, voluptatem voluptates atque expedita beatae cupiditate? Cupiditate dolores blanditiis minus, reiciendis fugit maiores. Aut accusamus eligendi asperiores porro quae quas ducimus quaerat ea esse, quasi, ad itaque doloribus, totam suscipit illo? Porro id quos eum vero ducimus asperiores provident eaque, maiores accusamus ullam doloremque excepturi, adipisci maxime quam? Ullam quam deleniti libero delectus veniam. Molestias tenetur laudantium culpa, dolorem <strong><i>ipsum ab aliquid</i></strong> rem similique aperiam nostrum voluptatum ducimus neque vel saepe numquam laborum quis! Sequi perspiciatis esse quisquam dolorem repellendus eum fugiat sapiente totam iusto mollitia at vitae, molestias veritatis eos. Asperiores reprehenderit consectetur consequatur voluptatibus non cupiditate nobis temporibus id molestias facilis exercitationem mollitia cumque numquam maxime quam fugit, dolorem voluptatem. Ad tempora, quia harum voluptatum recusandae doloribus. Ut voluptates cumque voluptatem, cupiditate eius praesentium modi pariatur voluptate ratione deleniti deserunt totam qui tempore. Neque nisi quidem expedita omnis perferendis porro deleniti dolor, non eius rerum ducimus dolore eaque consequuntur nostrum, et quaerat architecto, aut aspernatur tempore obcaecati reprehenderit veniam! Eveniet consequuntur aspernatur, praesentium consectetur facilis tempore in dignissimos maxime, blanditiis, sit explicabo esse doloribus numquam. Reiciendis, consequatur. Dolorem dicta amet suscipit veritatis quasi tempora. Officia minus similique corrupti ipsa exercitationem inventore natus est nihil nobis, error non perferendis voluptatem reprehenderit, harum eaque suscipit adipisci, fuga ullam labore dolorem? Tempora laboriosam minus, explicabo atque repellat, consequuntur iure inventore quas, provident blanditiis adipisci accusantium eaque obcaecati optio!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem qui necessitatibus quisquam sit, fugiat nostrum facilis, dicta ab ut blanditiis officiis, atque accusantium quam aliquid adipisci soluta iste sapiente amet repellendus reprehenderit. Eveniet voluptatum dolor earum tempore excepturi! Labore quasi quo dolorem porro cum quis facilis ea ducimus neque officia? Cum a ab blanditiis nesciunt fugiat molestias aperiam officiis quo!</p>
+
+        <div class="img2"><img src="https://images.pexels.com/photos/242124/pexels-photo-242124.jpeg" alt="Imagem Lorem Ipsum 2"></div>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat cumque odio nihil libero <a href="#">vero facilis</a> repellat officiis beatae. Expedita architecto et quos nesciunt aut doloribus nisi ipsa harum non accusantium perferendis, tempore minima eos tempora sapiente labore recusandae iure maiores saepe hic eaque impedit nemo facilis sed. Voluptas repudiandae quis at dolorum voluptates ab eum nesciunt adipisci ut fuga vero impedit maxime illo porro, eaque, nostrum minus tenetur commodi nisi a quibusdam! Quia, optio at accusantium perspiciatis cum, rerum aut voluptatibus architecto necessitatibus, eum explicabo quo asperiores provident quisquam suscipit deleniti. Tenetur nobis ducimus sapiente nisi quia dignissimos magni excepturi eveniet tempora deserunt, at aliquid neque, numquam cumque, id obcaecati optio itaque laboriosam. Saepe dicta commodi aspernatur libero illum! Architecto aspernatur vero eaque repellat facere sapiente libero at, ab suscipit a delectus quo voluptate ad doloremque impedit nostrum voluptates excepturi <a href="#">beatae harum</a>. Nam eveniet, excepturi, itaque necessitatibus velit nisi sint iste minus repellat tenetur, ratione animi alias asperiores eligendi eum quibusdam totam? Ex sequi totam facilis recusandae dignissimos cupiditate soluta harum aliquid, minus reiciendis iusto culpa inventore ea, necessitatibus ad optio blanditiis corporis debitis quia, libero eius quidem consequuntur rem accusamus. Nesciunt voluptas iure unde, debitis consequuntur, doloremque tempore temporibus et exercitationem, reiciendis harum nulla iste. Veritatis eligendi animi tempora est! Deserunt fuga, error ipsum, est ratione quo porro placeat facilis dolorem blanditiis unde. Et harum id quam odit deserunt inventore consequatur magnam ut, tempora autem quo placeat dolores ducimus eveniet nemo, nostrum molestias delectus maiores facere expedita quidem beatae. Distinctio minima sint mollitia odit quibusdam voluptatibus cumque ea blanditiis consectetur, beatae tempora consequatur omnis nulla in sit quisquam odio cum harum facere perferendis eos repudiandae! Eius temporibus esse magni nesciunt non inventore neque! Reiciendis ea itaque asperiores. Optio voluptate sequi, minus veniam perferendis quo. Iure, tempore omnis porro est molestiae soluta blanditiis facilis sequi doloribus optio. Provident ipsam dolore minus eaque optio sint sunt, vero, dolor laudantium molestiae illo iusto neque quibusdam ducimus nesciunt vitae. Deserunt maiores odit voluptas rem officiis. Nam, voluptates, doloremque exercitationem enim pariatur esse voluptatum et odit doloribus neque temporibus aliquid optio nobis harum architecto?</p>
+
+        <div class="img3"><img src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg" alt="Imagem Lorem Ipsum 3"></div>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ipsa minus ratione nisi? Ipsum itaque id perferendis nihil quasi corporis hic magnam necessitatibus a amet ab eveniet eligendi, sapiente ratione totam distinctio natus doloribus ut quas velit excepturi dolorum aliquid? Nulla non, harum itaque nihil recusandae natus culpa magni! Repellendus reiciendis consectetur iusto eveniet! Fugit labore possimus sunt magnam dolorum non aspernatur neque qui vel, modi quaerat nulla tenetur voluptatem cumque suscipit itaque quasi fuga cupiditate quidem, ea, quisquam dolore necessitatibus. Ducimus consequatur odio unde maxime atque totam cum ipsam quasi, iure quam, vel a eaque. Explicabo fuga sapiente aspernatur consequatur quibusdam sequi eos blanditiis architecto labore, corporis cumque! Officiis laborum cum maiores doloribus aut molestiae enim repellat quas dolor atque quo, maxime facilis dolore voluptate commodi ipsum cupiditate rem accusantium numquam tempore. Iure, dignissimos quisquam blanditiis tenetur magni eum numquam cum dolorem perferendis atque repellendus consequuntur, dicta deserunt tempora repudiandae eveniet molestias recusandae ipsum necessitatibus quae molestiae ad odio! Facere quaerat consequuntur placeat quo at? Possimus asperiores et, reiciendis nam necessitatibus quia, corrupti exercitationem autem sit dignissimos suscipit unde, adipisci vero. Et obcaecati quod magni, corrupti fugiat aliquam deleniti fuga dicta molestias illo beatae repellendus reiciendis enim officiis, eligendi animi, alias fugit eum facere doloremque iusto nostrum saepe voluptatem! Placeat sit voluptatibus recusandae quisquam amet eos mollitia iusto rem culpa, omnis, facere perspiciatis sunt eveniet blanditiis quis at nesciunt magni vel ab aliquam. Blanditiis a voluptatibus cum, est asperiores quibusdam officiis totam dicta incidunt nobis alias enim tempore porro.</p>
+
+    </main>
+    <footer>
+        <p>Footer Lorem Ipsum</p>
+    </footer>
+</body>
+</html>
