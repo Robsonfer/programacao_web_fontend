@@ -6,11 +6,18 @@
     <title>Aula 88 - Variáveis CSS (Custom Properties)</title>
 
     <style>
+
+        /* custom properties padronizando medida */
+        :root {
+            --header-height: 7rem;
+            --footer-height: 3rem; 
+            --padding-doc: 2rem;
+            --left-picture-margins: 1rem 2rem 1rem 0;
+            --right-picture-margins: 1rem 0 1rem 2rem;
+        }
+
         html {
             font-size: 62.5%;
-            --header-height: 7rem;
-            --footer-height: 3rem;
-            --padding-doc: 2rem;
         }
 
         body {
@@ -22,12 +29,12 @@
             width: 100%;
             background-color: gray;
             color: white;
-            height: var(--header-height);
+            height: var(--header-height); /* utilizando a custom property */
             font-size: 2rem;
             position: fixed;
             top: 0;
             left: 0;
-            padding: var(--padding-doc);
+            padding: var(--padding-doc); /* utilizando a custom property */
             align-items: center;
         }
 
@@ -73,7 +80,7 @@
             width: 300px;
             height: 200px;
             float: left;
-            margin: 1rem 2rem 1rem 0;
+            margin: var(--left-picture-margins); /* aqui padronizando as margens de todas as imagens que ficam à esquerda */
         }
 
         .img img {
@@ -87,7 +94,7 @@
             width: 300px;
             height: 200px;
             float: right;
-            margin: 1rem 0 1rem 2rem;
+            margin: var(--right-picture-margins); /* aqui padronizando as margens de todas as imagens que ficam à direita */
         }
 
         .img2 img {
@@ -101,7 +108,7 @@
             width: 300px;
             height: 200px;
             float: left;
-            margin: 1rem 2rem 1rem 0;
+            margin: var(--left-picture-margins);
         }
 
         .img3 img {
