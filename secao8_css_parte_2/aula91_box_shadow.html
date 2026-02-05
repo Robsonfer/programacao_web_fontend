@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 91 - Box Shadow</title>
+
+    <style>
+        h2 {
+            margin: 60px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .geral {
+            display: flex;
+        }
+
+        .div1, .div2, .div3, .div4, .div5 {
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            border-radius: 50px;
+        }
+
+        .div1 {
+            box-shadow: 10px 0 0 black;
+        }
+
+        .div2 {
+            box-shadow: 10px 10px 0 black;
+        }
+
+        .div3 {
+            box-shadow: -10px -10px 10px black;
+        }
+
+        .div4 {
+            box-shadow: 20px 0 15px -10px black;
+        }
+
+        .div5 {
+            box-shadow: 20px 0 10px 0 black, 10px 20px 10px red, -10px 0px 10px blue, 0 -10px 10px green;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            margin-top: 220px;
+        }
+        
+        .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover {
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+            transition-duration: 300ms;
+        }
+
+        ul {
+            display: block;
+            font-family: sans-serif;
+            font-size: 1rem;
+            margin-top: 250px;
+            border: 1px solid black;
+            width: fit-content;
+            padding: 32px 16px 18px 32px;
+            border-radius: 16px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        }
+
+        li {
+            width: 180px;
+            margin-bottom: 8px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Box Shadow</h2>
+    <div class="geral">
+        <div class="div1">
+            <ul>
+                <li>10px de deslocamento horizontal</li>
+                <li>10px de deslocamento vertical</li>
+                <li>0px de deslocamento de profundidade</li>
+                <li>0px de deslocamento de borrão</li>
+                <li>cor preta</li>
+            </ul>
+        </div>
+        
+        <div class="div2">
+            <ul>
+                <li>10px de deslocamento horizontal</li>
+                <li>10px de deslocamento vertical</li>
+                <li>0px de deslocamento de profundidade</li>
+                <li>0px de deslocamento de borrão</li>
+                <li>cor preta</li>
+            </ul>
+        </div>
+
+        <div class="div3">
+            <ul>
+                <li>-10px de deslocamento horizontal</li>
+                <li>-10px de deslocamento vertical</li>
+                <li>0px de deslocamento de profundidade</li>
+                <li>10px de deslocamento de borrão</li>
+                <li>cor preta</li>
+            </ul>
+        </div>
+
+        <div class="div4">
+            <ul>
+                <li>20px de deslocamento horizontal</li>
+                <li>0px de deslocamento vertical</li>
+                <li>-10px de deslocamento de profundidade</li>
+                <li>15px de deslocamento de borrão</li>
+                <li>cor preta</li>
+            </ul>
+        </div>
+
+        <div class="div5">
+            <ul>
+                <li>Podemos também colocar várias sombras de várias cores conforme for da nossa vontade</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
