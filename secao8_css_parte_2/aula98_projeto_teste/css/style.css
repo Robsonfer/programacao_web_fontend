@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    --fonte-pdrao: 'Roboto', sans-serif;
+    --fonte-titulos: 'Viaoda Libre', cursive;
+    --background-top-header: #162028;
+    --cor-texto-menu: #425564;
+    --cor-textos: #555;
+    --cor-fundo-box-imagem-detalhe: #003d52;
+    --cor-fundo-footer: #0b171f;
+    --cor-texto-footer: #6f8597;
+}

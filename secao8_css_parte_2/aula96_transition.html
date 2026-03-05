@@ -42,6 +42,19 @@
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
         }
 
+        /* Também podemos usar transition abreviada, ou seja, em vez de usar as propriedades separadas, 
+        podemos usar a propriedade transition com os valores separados por vírgula, como mostrado abaixo:
+
+        transition: width 1.2s cubic-bezier(0.55, -0.55, 0.7, 1.7) 0.3s,
+                    height 1.5s cubic-bezier(0.55, -0.55, 0.7, 1.7) 0.3s,
+                    border-radius 1s cubic-bezier(0.55, -0.55, 0.7, 1.7) 0.3s,
+                    box-shadow 1s cubic-bezier(0.55, -0.55, 0.7, 1.7) 0.3s,
+                    background-color 1.2s cubic-bezier(0.55, -0.55, 0.7, 1.7) 0.3s;
+        
+        Podemos também fixar alguma, senão todas as propriedades lá no começo do código com custom properties.
+        
+         */
+
         .div2:hover {
             width: 720px;
             height: 100px;
