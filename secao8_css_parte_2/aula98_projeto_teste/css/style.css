@@ -36,7 +36,8 @@ body {
     font-weight: normal;
     font-size: 2.5em;
     color: #fff;
-    margin: 0 5em;
+    margin: 0 5%;
+    text-wrap: nowrap;
 }
 
 .menu ul {
@@ -169,4 +170,54 @@ body {
     padding: 0.5em 0;
     gap: 1em;
     letter-spacing: 0.3em;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+
+    .body {
+        margin: 5%;
+    }
+
+    .sobre-nos {
+        text-align: center;
+        margin: 3em auto;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .menu ul li a {
+        font-size: 0.8em;
+        letter-spacing: 0.2em;
+    }
+
+    .imagens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagens-produtos {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .detalhes-importam-conteudo {
+        margin: 5% 5%;
+    }
+
+    .detalhes-importam-conteudo h2 {
+        font-size: 2em;
+    }
+
+     .detalhes-importam-conteudo p {
+        font-size: 1em;
+    }
+    
 }
