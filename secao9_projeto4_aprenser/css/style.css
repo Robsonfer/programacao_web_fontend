@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #FED001;
+}
+
+html {
+  font: 400 62.5% "Inter", sans-serif;
+}
+
+p, a {
+  font-size: 1.6rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.wrapperContainer-dark {
+  background-color: #2a2a2a;
+}
+
+.wrapperContainer-light {
+  background-color: #fafafa;
+}
+
+.wrapperContainer-dark2 {
+  background-color: #003464;
+}
