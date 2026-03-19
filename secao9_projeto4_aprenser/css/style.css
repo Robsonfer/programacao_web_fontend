@@ -3,7 +3,7 @@
 }
 
 html {
-  font: 400 62.5% "Inter", sans-serif;
+  font: 400 62.5% "Inter", sans-serif; /* Maneira de definir os parâmetros da fonte em uma única declaração */
 }
 
 p, a {
@@ -36,15 +36,20 @@ nav a {
     font-size: 1.8rem;
     text-decoration: none;
     padding: 1.6rem 4.6rem;
-    display: inline block;
-    color: black;
+    display: inline-block;
+    color: inherit;
     transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 .btn:hover {
-    background-color: white;
+    background-color: rgb(242, 242, 48);
     outline: 2px solid black;
     color: black;
+    box-shadow: 0 0 10px rgba(42, 42, 42, 0.8);
+}
+
+.wrapperContainer {
+  padding-top: 1px;
 }
 
 .wrapperContainer-dark {
@@ -64,6 +69,16 @@ nav a {
 .container {
     max-width: 1276px;
     margin: auto;
+}
+
+.section_title {
+  margin: 0;
+  padding: 7rem 0;
+  text-align: center;
+}
+
+.section_btn {
+  margin: 7rem 0;
 }
 
 .header {
@@ -102,5 +117,42 @@ nav a {
 }
 
 .hero_title {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
+}
+
+.cursos {
+  text-align: center;
+}
+
+.cursosContainer {
+  display: flex;
+  text-align: left;
+  gap: 2rem;
+}
+
+.curso_card {
+  /* border: 1px solid #ccc;
+  border-radius: 10px; */
+  flex: 1; /* Atalho para flex-grow: 1; flex-shrink: 0; flex-basis: 0; */
+}
+
+.curso_card img {
+  display: block;
+  width: 100%;
+}
+
+.curso_card h3 {
+  font-size: 2.4rem;
+}
+
+.curso_card p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.cursos_card_content {
+  border: 1px solid #ccc;
+  border-radius: 0 0 8px 8px;
+  border-top: transparent;
+  padding: 1.25rem;
 }
