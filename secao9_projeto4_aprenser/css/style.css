@@ -156,3 +156,20 @@ nav a {
   border-top: transparent;
   padding: 1.25rem;
 }
+
+.escola {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+}
+
+.escola_title {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.escola p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: justify;
+}
