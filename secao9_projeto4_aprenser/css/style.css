@@ -57,6 +57,13 @@ nav a {
   color: white;
 }
 
+.wrapperContainer-fixed {
+  position: sticky; /* Tem a função de fixar o elemento na posição em que foi definido */
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .wrapperContainer-light {
   background-color: #fafafa;
 }
@@ -172,4 +179,20 @@ nav a {
   font-size: 1.8rem;
   line-height: 1.5;
   text-align: justify;
+}
+
+.contatos_address {
+  text-align: right;
+  font: normal 400 1.8rem "Inter", sans-serif;
+  padding: 3rem 0;
+}
+
+.footer {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 4.5rem 0;
+}
+
+.footer a {
+  color: inherit;
 }
