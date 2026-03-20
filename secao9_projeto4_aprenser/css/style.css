@@ -196,3 +196,7 @@ nav a {
 .footer a {
   color: inherit;
 }
+
+.wrapperContainer-padded {
+  padding-top: 12rem;
+}
