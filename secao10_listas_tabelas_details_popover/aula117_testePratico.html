@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>DL Estilizado</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 16px;
+      width: 400px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .card h2 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 10px;
+    }
+
+    .spec-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .spec-list div {
+      display: flex;
+      justify-content: space-between;
+      background: #0f172a;
+      padding: 12px 15px;
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    .spec-list div:hover {
+      background: #1d4ed8;
+    }
+
+    dt {
+      font-weight: bold;
+      color: #94a3b8;
+    }
+
+    dd {
+      margin: 0;
+      font-weight: bold;
+      color: #f8fafc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h2>Especificações do Produto</h2>
+
+    <dl class="spec-list">
+      <div>
+        <dt>Marca</dt>
+        <dd>Apple</dd>
+      </div>
+
+      <div>
+        <dt>Modelo</dt>
+        <dd>iPhone 15</dd>
+      </div>
+
+      <div>
+        <dt>Armazenamento</dt>
+        <dd>128GB</dd>
+      </div>
+
+      <div>
+        <dt>Bateria</dt>
+        <dd>Até 20h de vídeo</dd>
+      </div>
+
+      <div>
+        <dt>Sistema</dt>
+        <dd>iOS</dd>
+      </div>
+    </dl>
+  </div>
+
+</body>
+</html>
