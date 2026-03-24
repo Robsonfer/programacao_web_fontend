@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 118 - Tabelas</title>
+
+    <style>
+
+        body {
+            color: white;
+            background-color: gray;
+        }
+
+        .table{
+            border: 5px solid lightblue;
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .td {
+            border: 5px solid yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Tags básicas -->
+    <table> <!-- Tag de tabela -->
+        <tr> <!-- Tag de linha de tabela -->
+            <td></td> <!-- Tag de coluna de tabela -->
+        </tr>
+    </table>
+
+    <!-- Exemplo 2 -->
+     <h2>Exemplo de tabela 3 x 2</h2>
+     <table class="table">
+        <tr class="tr">
+            <td class="td">1A</td>
+            <td class="td">1B</td>
+        </tr>
+        <tr class="tr">
+            <td class="td">2A</td>
+            <td class="td">2B</td>
+        </tr>
+        <tr class="tr">
+            <td class="td">3A</td>
+            <td class="td">3B</td>
+        </tr>
+     </table>
+
+     <!-- Exemplo 3 - colspan: uma única linha ocupando duas colunas-->
+     <h2>Exemplo de tabela - colspan</h2>
+     <table class="table">
+        <tr class="tr">
+            <td class="td" colspan="2">1A</td>
+        </tr>
+        <tr class="tr">
+            <td class="td">2A</td>
+            <td class="td">2B</td>
+        </tr>
+        <tr class="tr">
+            <td class="td">3A</td>
+            <td class="td">3B</td>
+        </tr>
+     </table>
+
+     <!-- Exemplo 4 - rowspan: uma única coluna ocupando duas linhas -->
+     <h2>Exemplo de tabela - rowspan</h2>
+     <table class="table">
+        <tr class="tr">
+            <td class="td" rowspan="2">1A</td>
+            <td class="td">1B</td>
+        </tr>
+        <tr class="tr">
+            <td class="td">2B</td>
+        </tr>
+        <tr class="tr">
+            <td class="td">3A</td>
+            <td class="td">3B</td>
+        </tr>
+     </table>
+
+</body>
+</html>
