@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 118 - Tabelas</title>
 
     <style>
-
         body {
             color: white;
-            background-color: gray;
+            background-color: rgb(77, 89, 127);
         }
 
-        .table{
+        .table {
             border: 5px solid lightblue;
             margin: 20px;
             padding: 20px;
@@ -24,9 +24,17 @@
             border: 5px solid yellow;
         }
 
+        .th {
+            border: 5px solid orange;
+        }
+
+        .table-collapsed {
+            border-collapse: collapse;
+        }
     </style>
 
 </head>
+
 <body>
 
     <!-- Tags básicas -->
@@ -37,8 +45,8 @@
     </table>
 
     <!-- Exemplo 2 -->
-     <h2>Exemplo de tabela 3 x 2</h2>
-     <table class="table">
+    <h2>Exemplo de tabela 3 x 2</h2>
+    <table class="table">
         <tr class="tr">
             <td class="td">1A</td>
             <td class="td">1B</td>
@@ -51,11 +59,11 @@
             <td class="td">3A</td>
             <td class="td">3B</td>
         </tr>
-     </table>
+    </table>
 
-     <!-- Exemplo 3 - colspan: uma única linha ocupando duas colunas-->
-     <h2>Exemplo de tabela - colspan</h2>
-     <table class="table">
+    <!-- Exemplo 3 - colspan: uma única linha ocupando duas colunas-->
+    <h2>Exemplo de tabela - colspan</h2>
+    <table class="table">
         <tr class="tr">
             <td class="td" colspan="2">1A</td>
         </tr>
@@ -67,11 +75,11 @@
             <td class="td">3A</td>
             <td class="td">3B</td>
         </tr>
-     </table>
+    </table>
 
-     <!-- Exemplo 4 - rowspan: uma única coluna ocupando duas linhas -->
-     <h2>Exemplo de tabela - rowspan</h2>
-     <table class="table">
+    <!-- Exemplo 4 - rowspan: uma única coluna ocupando duas linhas -->
+    <h2>Exemplo de tabela - rowspan</h2>
+    <table class="table">
         <tr class="tr">
             <td class="td" rowspan="2">1A</td>
             <td class="td">1B</td>
@@ -83,7 +91,80 @@
             <td class="td">3A</td>
             <td class="td">3B</td>
         </tr>
-     </table>
+    </table>
+
+    <h2>Exemplo de tabela - Table Header th</h2>
+    <table class="table">
+        <tr class="tr">
+            <th class="th">1A</td>
+            <th class="th">1b</td>
+        </tr>
+        <tr class="tr">
+            <td class="td">2A</td>
+            <td class="td">2B</td>
+        </tr>
+        <tr class="tr">
+            <td class="td">3A</td>
+            <td class="td">3B</td>
+        </tr>
+    </table>
+
+    <h2>Exemplo de tabela - thead, tbody e tfoot</h2>
+    <table class="table">
+        <thead> <!-- Representa todo o conteúdo do head da tabela -->
+            <tr class="tr">
+                <th class="th">1A</td>
+                <th class="th">1B</td>
+            </tr>
+        </thead>
+
+        <tbody> <!-- Representa todo o conteúdo do body da tabela -->
+            <tr class="tr">
+                <td class="td">2A</td>
+                <td class="td">2B</td>
+            </tr>
+            <tr class="tr">
+                <td class="td">3A</td>
+                <td class="td">3B</td>
+            </tr>
+        </tbody>
+
+        <tfoot> <!-- Representa todo o conteúdo do foot da tabela -->
+            <tr class="tr">
+                <th class="th">FA</th>
+                <th class="th">FB</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Exemplo de tabela - border-collapse</h2>
+    <table class="table table-collapsed">
+        <thead> <!-- Representa todo o conteúdo do head da tabela -->
+            <tr class="tr">
+                <th class="th">1A</td>
+                <th class="th">1B</td>
+            </tr>
+        </thead>
+
+        <tbody> <!-- Representa todo o conteúdo do body da tabela -->
+            <tr class="tr">
+                <td class="td">2A</td>
+                <td class="td">2B</td>
+            </tr>
+            <tr class="tr">
+                <td class="td">3A</td>
+                <td class="td">3B</td>
+            </tr>
+        </tbody>
+
+        <tfoot> <!-- Representa todo o conteúdo do foot da tabela -->
+            <tr class="tr">
+                <th class="th">FA</th>
+                <th class="th">FB</th>
+            </tr>
+        </tfoot>
+    </table>
 
 </body>
+
 </html>
