@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 119 - Tabelas: Mão na massa</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        caption {
+            font-size: 32px;
+            padding: 15px;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            height: 300px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: black;
+            color: white;
+        }
+
+        thead th {
+            padding: 8px;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        tfoot {
+            background-color: black;
+            color: white;
+        }
+
+        tfoot td {
+            padding: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <caption>
+            Tabela de preços de cursos
+        </caption>
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Design</td>
+                <td>inDesign</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Photoshop</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Illustrator</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores sujeitos a alterações em prévio aviso</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
