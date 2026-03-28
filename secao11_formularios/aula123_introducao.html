@@ -8,6 +8,27 @@
 </head>
 
 <body>
+    <!-- Formulário de busca no Google -->
+    <h1>Formulário de busca</h1>
+
+    <!--
+        Dentro da tag form temos os atributos:
+        - action (página do servidor que vai receber os dados enviados);
+        - method (método de envio, pode ser get ou post - get deixa dados visíveis na url, post tem mais segurança, não deixa dados na url).
+
+        Dentro do primeiro input temos os atributos:
+        - type que define o tipo de dados para input que aquele campo recebe;
+        - name que define o nome do input que o servidor terá acesso, no caso do google é sempre q (provavelmente de query).
+
+        Dentro do segundo input basicamente temos:
+        - o atributo type que define a função do campo que é submeter o valor que foi digitado para o servidor;
+        - o atributo value que vai definir o que vai escrito no botão criado neste input.
+    -->
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <label for="busca">Faça uma busca</label>
+        <input type="text" name="q" id="busca" placeholder="Pesquisar">
+        <input type="submit" value="Ok">
+    </form>
 
 </body>
 
