@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 124 - Semantica em Formulários</title>
+
+    <style>
+        html {
+            background-color: #95a5a6;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px #bbb;
+        }
+
+        form {
+            width: 350px;
+            background-color: #dde8eb;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px #333;
+            padding: 1em;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        input,
+        label {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        label {
+            margin-bottom: 0.25em;
+        }
+
+        input {
+            padding: 0.75em;
+            border-radius: 5px;
+            margin-bottom: 1.5em;
+            border: 1px solid #bbb;
+            font-size: 1em;
+        }
+
+        legend {
+            padding: 1em;
+            text-align: center;
+            font-weight: bold;
+            color: #454e4f;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1em;
+        }
+
+        .reset {
+            background-color: red;
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 3em;
+            cursor: pointer;
+        }
+
+        .submit {
+            background-color: green;
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 3em;
+            cursor: pointer;
+        }
+
+        .reset:hover {
+            background-color: darkred;
+        }
+
+        .submit:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Login</h1>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Entre com seus dados de acesso</legend>
+
+            <label for="user">Usuário</label>
+            <input type="text" id="user" required autofocus>
+
+            <label for="pass">Senha</label>
+            <input type="password" id="pass" required>
+
+            <div class="actions">
+                <input type="reset" value="Apagar" class="reset">
+                <input type="submit" value="Entrar" class="submit">
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
